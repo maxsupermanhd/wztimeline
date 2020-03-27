@@ -1,0 +1,11 @@
+1280 400
+Warzone 2100 (v3.3.0) base building and researching timelines. 2 start builders.
+4
+10
+1 0 30 B1: factory1
+1 30 30 B1: lab1
+3 30 31 F1: builder (oil)
+3 61 31 F1: builder (oil)
+5 60 116 L1: Engineering
+1 60 30 B1: factory2
+7 90 31 F2: builder (B2)
