@@ -113,7 +113,10 @@ cleanup:
 int main(int argc, char** argv) {
 	setbuf(stdout, 0);
 	signal(SIGABRT, handle_abrt);
-	printf("Hello world\n");
+	if(argc < 1) {
+		printf("Usage: %s <data file>\n", argv[0]);
+		return 1;
+	}
 
 	SDL_Init(SDL_INIT_EVERYTHING);
 	SDL_VideoInit(NULL);
