@@ -223,7 +223,7 @@ int main(int argc, char** argv) {
 		int count = 0;
 		while ((readed = getline(&buf, &bufsize, inp)) != -1) {
 			buf[strlen(buf)-1] = '\0';
-			printf("Got line: (%zu) [%s]\n", bufsize, buf);
+			printf("Got line: (%zu) [%s]\n", readed, buf);
 			int linenum, start, lenth;
 			char* text;
 			sscanf(buf, "%d %d %d %m[^\n]s", &linenum, &start, &lenth, &text);
