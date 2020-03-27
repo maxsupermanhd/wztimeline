@@ -168,7 +168,6 @@ int main(int argc, char** argv) {
 		SDL_RenderCopy(rend, label, NULL, &lr);
 		SDL_DestroyTexture(label);
 	}
-	renderback();
 
 	{
 		int readed;
@@ -216,7 +215,6 @@ int main(int argc, char** argv) {
 			contin++;
 		}
 	}
-	renderback();
 
 	{
 		int readed;
@@ -248,7 +246,6 @@ int main(int argc, char** argv) {
 			SDL_RenderDrawRect(rend, &br);
 			SDL_DestroyTexture(blockt);
 			count++;
-			renderback();
 		}
 		free(buf);
 	}
@@ -256,7 +253,6 @@ int main(int argc, char** argv) {
 
 	renderback();
 	save_texture(rend, final, "final.bmp");
-	SDL_Delay(2500);
 
 	SDL_DestroyRenderer(rend);
 	SDL_DestroyWindow(wind);
